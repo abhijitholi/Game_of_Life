@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conway's Game of Life</title>
+    <style>
+        #grid {
+            display: grid;
+            grid-template-columns: repeat(30, 20px);
+            grid-template-rows: repeat(30, 20px);
+        }
+        .cell {
+            width: 20px;
+            height: 20px;
+            border: 1px solid #ccc;
+        }
+        .alive {
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <div id="grid"></div>
+    <button onclick="randomizeGrid()">Randomize</button>
+    <button onclick="writeName()">Write Name</button>
+    <button onclick="toggleGame()">Start/Stop</button>
+    <script src="gameOfLife.js"></script>
+</body>
+
+</html>
